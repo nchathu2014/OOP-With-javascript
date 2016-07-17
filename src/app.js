@@ -15,6 +15,7 @@ class Drone extends Vehicle{
 class Car extends Vehicle{
     constructor(id){
         super(id);
+        this.id="ABC123";
         console.log("Constructing Car");
     }
 }
