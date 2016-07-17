@@ -10,8 +10,8 @@ Get to know about Object Oriented Concepts using in javascript
 - Constructor and Properties
 - Static Properties (Class properties Vs Instance Properties)
 - Methods
-- Static Methods
-- Getters and Setters
+- Static Methods (static)
+- Getters and Setters (get , set)
 
 ### Inheritance
 ### Data Service
