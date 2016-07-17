@@ -5,37 +5,26 @@
 
 class Drone{
 
-    constructor(id,name){
-        this.id=id;
-        this.name=name;
+    constructor(id){
+        this._id=id;
     }
 
-    static companyName(){
-        console.dir(this);
-        console.log("I am the company name "+this.id); // id is no belongs to class variables
+    get id(){
+        return this._id;
     }
 
-    fly(){
-        console.log(Drone.test);
+    set id(value){
+        this._id=value;
     }
 }
 
-Drone.test="I am test";
+let drone = new Drone("A123");
 
-let droneInstance = new Drone("A123","Black Bird");
-let droneInstance1 = new Drone("A1233","Black Hawek");
+console.log(drone);
 
-console.log(droneInstance["id"]+"--"+droneInstance["name"]);
-console.log(droneInstance1.id+"--"+droneInstance1.name);
+//set id
 
+drone.id="B123";
 
-//droneInstance.companyName() Error out
-
-Drone.companyName();
-droneInstance.fly();
-
-
-/*
-*  Static methods -> DONT use instance properties
-*  Instance methods -> OK to use static properties
-* */
+//get id
+console.log(drone.id);
