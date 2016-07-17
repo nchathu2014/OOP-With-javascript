@@ -14,7 +14,7 @@ Get to know about Object Oriented Concepts using in javascript
 - Getters and Setters (get , set)
 
 ### Inheritance
-- Inheritance
+- Inheritance (Inheritance hierarchy in javascript)
 - Extending a Class
 - Inheriting Constructors
 - Inheriting Properties

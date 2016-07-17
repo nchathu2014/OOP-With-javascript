@@ -2,29 +2,21 @@
  * Created by UCHATNU on 7/17/2016.
  */
 
+class Vehicle{
 
-class Drone{
-
-    constructor(id){
-        this._id=id;
-    }
-
-    get id(){
-        return this._id;
-    }
-
-    set id(value){
-        this._id=value;
-    }
 }
 
-let drone = new Drone("A123");
+class Drone extends Vehicle{
 
-console.log(drone);
+}
 
-//set id
+class Car extends Vehicle{
 
-drone.id="B123";
+}
 
-//get id
-console.log(drone.id);
+
+let c = new Car();
+
+console.log("c instanceof Car --> "+(c instanceof Car));
+console.log("c instanceof Vehicle --> "+(c instanceof Vehicle));
+console.log("c instanceof Object --> "+(c instanceof Object));
