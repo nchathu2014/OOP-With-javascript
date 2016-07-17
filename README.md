@@ -16,7 +16,7 @@ Get to know about Object Oriented Concepts using in javascript
 ### Inheritance
 - Inheritance (Inheritance hierarchy in javascript)
 - Extending a Class
-- Inheriting Constructors
+- Inheriting Constructors (Order of executing the constructors in the class hierarchy)
 - Inheriting Properties
 - Inheriting Methods
 - Organizing Classes
