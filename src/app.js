@@ -3,6 +3,10 @@
  */
 
 
-let name ="Nuwan";
+class Drone{
 
-console.log("I am "+name);
+}
+let droneInstance = new Drone();
+
+console.log("Type of Drone : "+typeof Drone);
+console.log("Instance of Drone : "+typeof droneInstance);
