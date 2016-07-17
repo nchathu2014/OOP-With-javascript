@@ -8,7 +8,7 @@ Get to know about Object Oriented Concepts using in javascript
 - ES6 Module (variables are automatically **scoping into the module** and **'strict' mode**)
 - Classes
 - Constructor and Properties
-- Static Properties
+- Static Properties (Class properties Vs Instance Properties)
 - Methods
 - Static Methods
 - Getters and Setters
