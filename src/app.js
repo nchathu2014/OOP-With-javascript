@@ -3,7 +3,9 @@
  */
 
 class Vehicle{
-
+    constructor(id){
+        this.id=id;
+    }
 }
 
 class Drone extends Vehicle{
@@ -11,12 +13,12 @@ class Drone extends Vehicle{
 }
 
 class Car extends Vehicle{
-
+    constructor(id){
+        super(id);
+        console.log("Constructing Car");
+    }
 }
 
 
-let c = new Car();
-
-console.log("c instanceof Car --> "+(c instanceof Car));
-console.log("c instanceof Vehicle --> "+(c instanceof Vehicle));
-console.log("c instanceof Object --> "+(c instanceof Object));
+let c = new Car("A123");
+console.log(c.id);
