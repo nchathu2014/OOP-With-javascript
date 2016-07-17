@@ -10,12 +10,17 @@ class Drone{
         this.name=name;
     }
 
+    static companyName(){
+        console.dir(this);
+        console.log("I am the company name "+this.id); // id is no belongs to class variables
+    }
+
     fly(){
-        console.log("Drone "+this.id+" is flying...");
+        console.log(Drone.test);
     }
 }
 
-
+Drone.test="I am test";
 
 let droneInstance = new Drone("A123","Black Bird");
 let droneInstance1 = new Drone("A1233","Black Hawek");
@@ -23,6 +28,14 @@ let droneInstance1 = new Drone("A1233","Black Hawek");
 console.log(droneInstance["id"]+"--"+droneInstance["name"]);
 console.log(droneInstance1.id+"--"+droneInstance1.name);
 
-droneInstance.fly();
-droneInstance1.fly();
 
+//droneInstance.companyName() Error out
+
+Drone.companyName();
+droneInstance.fly();
+
+
+/*
+*  Static methods -> DONT use instance properties
+*  Instance methods -> OK to use static properties
+* */
