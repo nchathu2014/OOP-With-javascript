@@ -5,8 +5,7 @@ Get to know about Object Oriented Concepts using in javascript
 ## Contents
 
 ### Classes
-- Creating a Module
-- Defining Classes and Objects
+- ES6 Module (variables are automatically **scoping into the module** and **'strict' mode**)
 - Classes
 - Constructor and Properties
 - Static Properties
