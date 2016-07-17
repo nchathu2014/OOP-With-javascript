@@ -3,23 +3,33 @@
  */
 
 class Vehicle{
-    constructor(id){
-        this.id=id;
+
+    start(){
+        console.log("Vehicle Started");
     }
+
+    static getGPSToken(){
+        console.log("Vehicle GPG Token");
+    }
+
 }
 
-class Drone extends Vehicle{
-
-}
 
 class Car extends Vehicle{
-    constructor(id){
-        super(id);
-        this.id="ABC123";
-        console.log("Constructing Car");
+    start(){ //override method start
+
+        console.log("Car Started");
+        super.start();
+    }
+
+    static getGPSToken(){
+        super.getGPSToken();
+        console.log("Car GPG Token");
     }
 }
 
 
-let c = new Car("A123");
-console.log(c.id);
+let c = new Car();
+c.start();
+
+Car.getGPSToken();
