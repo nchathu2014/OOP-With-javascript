@@ -1,35 +1,9 @@
-/**
- * Created by UCHATNU on 7/17/2016.
- */
-
-class Vehicle{
-
-    start(){
-        console.log("Vehicle Started");
-    }
-
-    static getGPSToken(){
-        console.log("Vehicle GPG Token");
-    }
-
-}
+import {Car} from "./classes/car.js";
+import {Drone} from "./classes/drone.js";
 
 
-class Car extends Vehicle{
-    start(){ //override method start
+let car = new Car();
+let drone = new Drone();
 
-        console.log("Car Started");
-        super.start();
-    }
-
-    static getGPSToken(){
-        super.getGPSToken();
-        console.log("Car GPG Token");
-    }
-}
-
-
-let c = new Car();
-c.start();
-
-Car.getGPSToken();
+console.log(car);
+console.log(drone);
