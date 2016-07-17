@@ -14,6 +14,13 @@ Get to know about Object Oriented Concepts using in javascript
 - Getters and Setters (get , set)
 
 ### Inheritance
+- Inheritance
+- Extending a Class
+- Inheriting Constructors
+- Inheriting Properties
+- Inheriting Methods
+- Organizing Classes
+
 ### Data Service
 ### User Interface(UI) Classes
 
