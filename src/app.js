@@ -9,12 +9,20 @@ class Drone{
         this.id=id;
         this.name=name;
     }
+
+    fly(){
+        console.log("Drone "+this.id+" is flying...");
+    }
 }
 
-Drone.maxHeight=2000; // static/class property which is belong to the class not to the object instance
+
 
 let droneInstance = new Drone("A123","Black Bird");
 let droneInstance1 = new Drone("A1233","Black Hawek");
 
-console.log(droneInstance["id"]+"--"+droneInstance["name"]+"--"+Drone.maxHeight);
+console.log(droneInstance["id"]+"--"+droneInstance["name"]);
 console.log(droneInstance1.id+"--"+droneInstance1.name);
+
+droneInstance.fly();
+droneInstance1.fly();
+
